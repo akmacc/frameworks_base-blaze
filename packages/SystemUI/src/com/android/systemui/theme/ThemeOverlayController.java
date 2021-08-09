@@ -109,7 +109,9 @@ import javax.inject.Inject;
 @SysUISingleton
 public class ThemeOverlayController implements CoreStartable, Dumpable, TunerService.Tunable {
     protected static final String TAG = "ThemeOverlayController";
-    private static final boolean DEBUG = true;
+    protected static final String OVERLAY_BERRY_BLACK_THEME =
+            "org.lineageos.overlay.customization.blacktheme";
+    private static final boolean DEBUG = false;
 
     private static final String PREF_CHROMA_FACTOR ="monet_engine_chroma_factor";
     private static final String PREF_LUMINANCE_FACTOR ="monet_engine_luminance_factor";
